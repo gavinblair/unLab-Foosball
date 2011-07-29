@@ -1,0 +1,193 @@
+﻿<!doctype html>
+<!-- Conditional comment for mobile ie7 http://blogs.msdn.com/b/iemobile/ -->
+<!-- Appcache Facts http://appcachefacts.info/ -->
+<!--[if IEMobile 7 ]>    <html class="no-js iem7" manifest="default.appcache?v=1"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"><!-- manifest="default.appcache?v=1"--> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Foosball</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320"/>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;">
+  
+  <!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
+  <!-- For iPhone 4 with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+  <!-- For first-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+  <!-- For nokia devices: -->
+  <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+  
+  <!--iOS web app, deletable if not needed -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-startup-image" href="img/l/splash.png">
+  
+  <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+  <meta http-equiv="cleartype" content="on">
+	
+	<!-- more tags for your 'head' to consider https://gist.github.com/849231 -->
+  <link href='http://fonts.googleapis.com/css?family=VT323&v2' rel='stylesheet' type='text/css'>
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=1">
+ 
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/libs/modernizr-custom.js"></script>
+  
+</head>
+
+<body>
+
+	<div id="container">
+		<div id="home" class="page current">
+			<h1>FOOSBALL</h1>
+			<a href="#choose-table">New Game</a>
+			<a href="#current-games">Current Games</a>
+			<a href="#stats">Stats</a>
+			<a href="#about">About</a>
+		</div>
+		<div id="choose-table" class="page">
+			<h1>NEW GAME</h1>
+			<h2>Choose Table</h2>
+			<label>Table</label>
+			<a class="select">unLab Foosball</a>
+			<label>Drop a ball into one of the goals to continue.</label>
+			<div class="timer"></div>
+			<a href="#game-type">CONTINUE?</a>
+		</div>
+		<div id="game-type" class="page">
+			<h1>NEW GAME</h1>
+			<a href="#scoreboard" rel="quickstart">Quick Start</a>
+			<a href="#player-setup" rel="2p">2 Player Game</a>
+			<a href="#player-setup" rel="4p">4 Player Game</a>
+			<a href="#player-setup" rel="8p">8 Player Game</a>
+			<a href="#home">Back</a>
+		</div>
+		<div id="player-setup" class="page">
+			<h1>NEW GAME</h1>
+			<h2>Red Defence</h2>
+			<label for="name">Name</label>
+			<input id="name" />
+			<label for="twitter">Twitter (optional)</label>
+			<input id="twitter" />
+			<label for="password">Password (optional)</label>
+			<input id="password" type="password" />
+			<a href="#scoreboard">CONTINUE?</a>
+		</div>
+		<div id="scoreboard" class="page">
+			<h1>GAME</h1>
+			<h2>00:00</h2>
+			<table>
+				<tr>
+					<th>Red</th>
+					<th>Yellow</th>
+				</tr>
+				<tr>
+					<td class="red">0</td>
+					<td class="yellow">0</td>
+				</tr>
+			</table>
+			<a href="#game-options">Game Options</a>
+		</div>
+		<div id="game-options" class="page">
+			<h1>GAME</h1>
+			<h2>Paused</h2>
+			<table>
+				<tr>
+					<th>Red</th>
+					<th>Yellow</th>
+				</tr>
+				<tr>
+					<td><a>-</a>0<a>+</a></td>
+					<td><a>-</a>0<a>+</a></td>
+				</tr>
+			</table>
+			<a class='abort' href="#home">Abort Game</a>
+			<a href="#scoreboard">CONTINUE?</a>
+		</div>
+		<div id="current-games" class="page">
+			<h1>GAMES</h1>
+			
+		</div>
+		<div id="stats" class="page">
+			<h1>STATS</h1>
+			
+		</div>
+		<div id="stats-players" class="page">
+			<h1>STATS</h1>
+			
+		</div>
+		<div id="player-stats" class="page">
+			<h1>STATS</h1>
+			<h2>Gavin Blair</h2>
+			
+		</div>
+		<div id="stats-games" class="page">
+			<h1>STATS</h1>
+			
+		</div>
+		<div id="game-stats" class="page">
+			<h1>STATS</h1>
+			<h2>Game 54</h2>
+			
+		</div>
+		<div id="stats-tables" class="page">
+			<h1>STATS</h1>
+			
+		</div>
+		<div id="table-stats" class="page">
+			<h1>STATS</h1>
+			<h2>Table</h2>
+			
+		</div>
+		<div id="about" class="page">
+			<h1>FOOSBALL</h1>
+			<h2>by unLab</h2>
+			
+		</div>
+    
+	</div> <!--! end of #container -->
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
+  <script src="js/script.js"></script>
+  <!-- scripts concatenated and minified via ant build script -->
+  <script src="js/mylibs/helper.js"></script>
+  <!-- end concatenated and minified scripts-->
+  
+  <script>
+    // iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
+    MBP.scaleFix();
+    
+    // Media Queries Polyfill https://github.com/shichuan/mobile-html5-boilerplate/wiki/Media-Queries-Polyfill
+    yepnope({
+      test : Modernizr.mq('(min-width)'),
+      nope : ['js/libs/respond.min.js']
+    });
+  </script>
+  
+  <!-- Debugger - remove for production -->
+  <!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
+  
+  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+    s.parentNode.insertBefore(g,s)}(document,"script"));
+  </script>
+
+</body>
+</html>
